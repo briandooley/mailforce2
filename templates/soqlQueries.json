@@ -1,0 +1,54 @@
+{
+    "RHMAPCase": [
+        "SELECT Account.Name, SBR_Group__c, Account.accountNumber, TargetDate__c, CaseNumber, SBT__c, Severity__c, CreatedDate, Created_By__c, Case_Contact__c, Description, Id, Link_To_Case_in_Portal__c, Subject, RH_Product__r.Id ",
+        "FROM Case",
+        "WHERE CreatedDate > {{createdDate}} ",
+        "AND RH_Product__r.Id = 'a1BA000000GFRGZMA5'"
+    ],
+    "RHMAPComment": [
+        "SELECT Case__r.TargetDate__c, Case__r.SBR_Group__c, Case__r.SBT__c, Case__r.Account.accountNumber, Case__c, Case__r.Severity__c, Case__r.CaseNumber, Case__r.Internal_Status__c, Case__r.Status, Case__r.Contact.Name, Case__r.Owner.Name, Case__r.Owner.Email, Case__r.Account.Name, Case__r.Subject, Case__r.Description, Comment_Body__c, Created_By__c, CreatedDate, Id, Case__r.Link_To_Case_in_Portal__c, Is_Public__c, Case__r.RH_Product__r.Id ",
+        "FROM Case_Comment__c ",
+        "WHERE Is_Draft__c = false ", 
+        "AND Published_Date__c > {{createdDate}} ",
+        "AND Case__r.RH_Product__r.Id = 'a1BA000000GFRGZMA5'"
+    ],
+    "3scaleCase": [
+        "SELECT Account.Name, SBR_Group__c, Account.accountNumber, TargetDate__c, CaseNumber, SBT__c, Severity__c, CreatedDate, Created_By__c, Case_Contact__c, Description, Id, Link_To_Case_in_Portal__c, Subject, RH_Product__r.Id ",
+        "FROM Case",
+        "WHERE CreatedDate > {{createdDate}} ",
+        "AND RH_Product__r.Id = 'a1BA000000KyZKUMA3'"
+    ],
+    "3scaleComment": [
+        "SELECT Case__r.TargetDate__c, Case__r.SBR_Group__c, Case__r.SBT__c, Case__r.Account.accountNumber, Case__c, Case__r.Severity__c, Case__r.CaseNumber, Case__r.Internal_Status__c, Case__r.Status, Case__r.Contact.Name, Case__r.Owner.Name, Case__r.Owner.Email, Case__r.Account.Name, Case__r.Subject, Case__r.Description, Comment_Body__c, Created_By__c, CreatedDate, Id, Case__r.Link_To_Case_in_Portal__c, Is_Public__c, Case__r.RH_Product__r.Id ",
+        "FROM Case_Comment__c ",
+        "WHERE Is_Draft__c = false ", 
+        "AND Published_Date__c > {{createdDate}} ",
+        "AND Case__r.RH_Product__r.Id = 'a1BA000000KyZKUMA3'"
+    ],
+    "quayCase": [
+        "SELECT Account.Name, SBR_Group__c, Account.accountNumber, TargetDate__c, CaseNumber, SBT__c, Severity__c, CreatedDate, Created_By__c, Case_Contact__c, Description, Id, Link_To_Case_in_Portal__c, Subject, RH_Product__r.Id ",
+        "FROM Case",
+        "WHERE CreatedDate > {{createdDate}} ",
+        "AND RH_Product__r.Id IN ('a1BA000000LnntGMAR', 'a1BA000000Lq6h1MAB', 'a1BA000000Lq641MAB')" 
+    ],
+    "quayComment": [
+        "SELECT Case__r.TargetDate__c, Case__r.SBR_Group__c, Case__r.SBT__c, Case__r.Account.accountNumber, Case__c, Case__r.Severity__c, Case__r.CaseNumber, Case__r.Internal_Status__c, Case__r.Status, Case__r.Contact.Name, Case__r.Owner.Name, Case__r.Owner.Email, Case__r.Account.Name, Case__r.Subject, Case__r.Description, Comment_Body__c, Created_By__c, CreatedDate, Id, Case__r.Link_To_Case_in_Portal__c, Is_Public__c, Case__r.RH_Product__r.Id ",
+        "FROM Case_Comment__c ",
+        "WHERE Is_Draft__c = false ", 
+        "AND Published_Date__c > {{createdDate}} ",
+        "AND Case__r.RH_Product__r.Id IN ('a1BA000000LnntGMAR', 'a1BA000000Lq6h1MAB', 'a1BA000000Lq641MAB')"
+    ],
+    "codereadyCase": [
+        "SELECT Account.Name, SBR_Group__c, Account.accountNumber, TargetDate__c, CaseNumber, SBT__c, Severity__c, CreatedDate, Created_By__c, Case_Contact__c, Description, Id, Link_To_Case_in_Portal__c, Subject, RH_Product__r.Id ",
+        "FROM Case",
+        "WHERE CreatedDate > {{createdDate}} ",
+        "AND RH_Product__r.Id IN ('a1BA000000LuqsiMAB')" 
+    ],
+    "codereadyComment": [
+        "SELECT Case__r.TargetDate__c, Case__r.SBR_Group__c, Case__r.SBT__c, Case__r.Account.accountNumber, Case__c, Case__r.Severity__c, Case__r.CaseNumber, Case__r.Internal_Status__c, Case__r.Status, Case__r.Contact.Name, Case__r.Owner.Name, Case__r.Owner.Email, Case__r.Account.Name, Case__r.Subject, Case__r.Description, Comment_Body__c, Created_By__c, CreatedDate, Id, Case__r.Link_To_Case_in_Portal__c, Is_Public__c, Case__r.RH_Product__r.Id ",
+        "FROM Case_Comment__c ",
+        "WHERE Is_Draft__c = false ", 
+        "AND Published_Date__c > {{createdDate}} ",
+        "AND Case__r.RH_Product__r.Id IN ('a1BA000000LuqsiMAB')"
+    ]
+}

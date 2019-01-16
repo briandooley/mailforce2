@@ -1,0 +1,12 @@
+node_modules
+backups
+*~
+cov-*
+coverage
+plato
+.idea
+lib/fields.txt
+lib/pwd.txt
+Grunt-ReadMe.md
+.env
+setenv.sh
